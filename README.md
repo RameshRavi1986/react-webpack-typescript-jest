@@ -34,5 +34,11 @@ LetterList -->calls letterclicked on AppContext --> which updates the state base
 Rerenders related components
 When all words are revealed a message shown to the user
 
-The whole state logic is separated in to context files
+The whole state logic is separated in to context files.
+
+# Unit test
+
+Unit and integration tests are done using react testing library and jest as a test runner.
+
+
 
