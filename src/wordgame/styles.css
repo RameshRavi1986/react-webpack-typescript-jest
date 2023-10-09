@@ -1,0 +1,11 @@
+.not-revealed{
+    width:30px;
+    display:inline-block;
+    height:30px;
+    background:black;
+    transform:none;
+    transition: tranform 3s ease-in;
+}
+.reveal-anim{
+    transform:rotate(-90deg);
+}

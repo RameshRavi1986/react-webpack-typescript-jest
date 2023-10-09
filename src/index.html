@@ -3,6 +3,91 @@
 <head>
     <meta charset="utf-8" />
     <title>My app</title>
+    <style>
+        .container span, .container div{
+            box-sizing:border-box;
+        }
+        .block{
+            display: flex;
+            margin: 2em;
+        }
+        .points{
+            font-size:30px;
+            background:blue;
+            width:30px;
+            height:40px;
+            color:white;
+        }
+        .modal.display{
+            display:block;
+            opacity:1;
+        }
+        .modal {
+            display: none; /* Hidden by default */
+            position: fixed; /* Stay in place */
+            z-index: 1; /* Sit on top */
+            left: 0;
+            opacity:0;
+            top: 0;
+            width: 100%; /* Full width */
+            height: 100%; /* Full height */
+            overflow: auto; /* Enable scroll if needed */
+            background-color: rgb(0,0,0); /* Fallback color */
+            background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+            transition:opacity 0.5s ease ;
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+        .flex-center{
+            align-items: center;
+            justify-content: center;
+        }
+        .container{
+            display: flex;
+    flex-direction: column;
+        }
+        .btn:disabled{
+            background:grey;
+            border:none;
+        }
+        .btn{
+            margin:1px;
+        }
+        .primary{
+            border:1px solid purple;
+            background-color: green;
+            font-size:10px;
+            color: white;
+        }
+        .small{
+            width:40px;
+            height:40px;
+            font-size:15px;
+        }
+
+    .not-revealed{
+    width:60px;
+    height:60px;
+    display:inline-block;
+    background:black;
+    border-radius:50%;
+    margin:1em;
+    transition: all .5s ease-in;
+    font-size:30px;
+    padding:15px;
+}
+.reveal-anim{
+    background:none;
+}
+    </style>
 </head>
 <body>
 <div id="root"></div>

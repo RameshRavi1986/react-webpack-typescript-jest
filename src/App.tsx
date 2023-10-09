@@ -1,16 +1,11 @@
-import React, { useReducer} from "react";
-import {State,StateType} from "./state";
-import {counterReducer} from './reducers'
-import {ActionTypes} from "./actionTypes";
+import React from "react";
+import {App as Wd} from './wordgame/App'
+
 
 const App:React.FC = () =>{
-    const [testValue, setTestValue] = React.useState<string>('');
-    let changeTestValue = (e:React.ChangeEvent<HTMLInputElement>) =>{
-        setTestValue('hello'+e.currentTarget.value);
-    }
     return (
-        <div>
-            <input onChange={changeTestValue} value={testValue}/>
+        <div className="container flex-center">
+            <Wd/>
         </div>
     )
 }
